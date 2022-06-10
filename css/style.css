@@ -1,0 +1,278 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+
+/*------------------ HiperText Markup Language ---------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*------- container de tudo que é conteúdo do site ------------------*/
+body{
+    margin:  0;
+    box-sizing: border-box;
+    height: 312.5rem;
+}
+
+
+/*------------------ tag anchor ------------------*/
+.link{
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*------------------ Imagens do site todo ------------------*/
+.image {
+    padding: 2rem;
+    width: 55%;
+    margin: auto;
+    display: block;
+}
+
+/*------------------ Videos do site ------------------*/
+div .video {
+    padding: 50px;
+    padding-bottom: 50%;
+    margin: 0rem -1.25rem 1.875rem -1.25rem;
+    position: relative;
+}
+
+div .video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 5%;
+}
+
+
+/*------------------ Navegação por link -------------------------*/
+nav{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+/*--------------------- Nomes que estão no Menu ------------------*/
+nav a{
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    display: block;
+    padding: 50px 40px;
+    font-family: 'Bangers', cursive;
+}
+
+
+/*--------------------- Efeitos da Barra -----------------*/
+nav a:hover{
+    transition: 0.6s;
+    background-color: #6D74F2;
+    color: black;
+}
+
+
+
+/*------------------ Titulo Principal ------------------*/
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10.375rem ;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/*------------------ Titulos principais ------------------*/
+.title{
+    font-family: 'Bangers', cursive;
+    padding: 4.375rem;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+/*------------------ Subtitulos dos titulos ------------------*/
+/*SubTitulo*/
+.subtitle{
+    padding: 4rem;
+    font-family: 'Bangers', cursive;
+}
+
+
+
+/*------------------ Parágrafos ------------------*/
+.text{
+    padding: 1.5rem;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 0.9375rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/*------------------ Rodapé ------------------*/
+footer{
+    width: 100%;
+    min-height: 15.625rem;
+    background: #444;
+    display: flex;
+}
+
+footer .boxs{
+    width: 20rem;
+    min-height: 9.375rem;
+    padding: 1.25rem;
+}
+
+footer .boxs:nth-child(4)
+{
+    width: 25rem;
+}
+
+/*------------------ Caixa ------------------*/
+.boxs h1{
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.boxs ul li{
+    margin: .625rem 0rem;
+    list-style: none;
+}
+
+.boxs ul li a{
+    color: #ddd;
+    text-decoration: none; 
+}
+
+.boxs ul li a:hover{
+    color: #000000;
+}
+
+.boxs p{
+    color: #fff;
+    text-align: justify;
+    width: 75%;
+}
+
+/*------------------ Config Rodapé ------------------*/
+.footer{
+    width: 97.9%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0px 1.05%;
+}
+
+.footer .sociais{
+    display: flex;
+}
+
+/*------------------ Cor das letras no rodapé ------------------*/
+.footer h1{
+    color: #fff;
+}
+
+.sociais .social{
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    background: #ddd;
+    margin: .625rem;
+    border-radius: .3125rem;
+    cursor: pointer;
+    transition: background .2s linear; 
+}
+
+.sociais .social a{
+    color: #000;
+    font-size: 1.5rem;
+    transition: color .2s linear;
+}
+
+.sociais .social:hover{
+    background: #444;
+}
+
+.sociais .social:hover a{
+    color: #fff;
+}
+
+
+@media(max-width: 59.375rem){
+    footer{
+        flex-direction: column;
+    }
+    footer .boxs{
+        width: 100%;
+        text-align: center;
+    }
+    footer .boxs:nth-child(4){
+        width: 100%;
+    }
+}
+
+.list{
+    padding: 1.5rem;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 0.9375rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.list-n{
+padding: 1.5rem;
+width: 55%;
+margin-left: auto;
+margin-right: auto;
+text-indent: 0.9375rem;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.5rem;
+}
+
+
+
+/* ------------------Largura da barra de rolagem------------------ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+
+/* ------------------Fundo da barra de rolagem------------------ */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+}
+
+
+
+/* ------------------Cor do indicador de rolagem------------------ */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+
+
+/* -------Cor do indicador de rolagem - ao passar o mouse------------ */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+}
